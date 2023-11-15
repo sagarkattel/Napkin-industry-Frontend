@@ -1,6 +1,6 @@
 ## To run This Project here are the steps that you need to follow
 
-1st Step - git clone <url>
+1st Step - git clone https://github.com/sagarkattel/Napkin-industry-Frontend.git
 
 2nd Step - npm i
 
