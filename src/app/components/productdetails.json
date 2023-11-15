@@ -1,0 +1,38 @@
+
+[
+    {
+        "id":1,
+        "img_url":"https://images.pexels.com/photos/2265486/pexels-photo-2265486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "title":"Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport",
+        "price":599,
+        "rating":4.2
+    },
+    {
+        "id":2,
+        "img_url":"https://images.pexels.com/photos/2265486/pexels-photo-2265486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "title":"Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport",
+        "price":399,
+        "rating":3.3
+    },
+    {
+        "id":3,
+        "img_url":"https://images.pexels.com/photos/2265486/pexels-photo-2265486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "title":"Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport",
+        "price":199,
+        "rating":4.3
+    },
+    {
+        "id":4,
+        "img_url":"https://images.pexels.com/photos/2265486/pexels-photo-2265486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "title":"Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport",
+        "price":799,
+        "rating":2.3
+    },
+    {
+        "id":5,
+        "img_url":"https://images.pexels.com/photos/2265486/pexels-photo-2265486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "title":"Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport",
+        "price":674,
+        "rating":1.3
+    }
+]
