@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="md:p-4 p-4 text-black font-semibold text-[15px] font-primary bg-[#F1F1F1] drop-shadow-lg">
+    <div className="md:p-4 xl:p-5 text-black font-semibold text-[15px] font-primary bg-[#F1F1F1] drop-shadow-lg">
       <div className="flex justify-between items-center mx-4">
         <div className="flex items-center justify-between w-screen md:w-auto">
           <h1 className="w-auto text-xl font-bold text-[#00df9a] cursor-pointer">
@@ -54,14 +54,13 @@ const Navbar = () => {
           className={
             nav
               ? "fixed left-0 top-0 w-[60%] h-screen border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
-              : "ease-in-out duration-500 fixed left-[-100%]"
+              : "ease-in-out duration-500 fixed left-[-100%] h-screen top-0"
           }
         >
           <h1 className="w-auto text-xl font-bold text-[#00df9a] m-4">Logo</h1>
           <li className="p-4 border-b border-gray-600 text-white">Home</li>
-          <li className="p-4 border-b border-gray-600 text-white">Company</li>
-          <li className="p-4 border-b border-gray-600 text-white">Resources</li>
-          <li className="p-4 border-b border-gray-600 text-white">About</li>
+          <li className="p-4 border-b border-gray-600 text-white">Shop</li>
+          <li className="p-4 border-b border-gray-600 text-white">About Us</li>
           <li className="p-4 border-b border-gray-600 text-white">Contact</li>
         </ul>
       </div>
