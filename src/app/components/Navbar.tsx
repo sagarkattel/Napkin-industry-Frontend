@@ -2,6 +2,7 @@
 
 import React, { useContext, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { BsSearch } from "react-icons/bs";
 
 import { FaShoppingCart } from "react-icons/fa";
 
@@ -17,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="md:p-4 xl:p-5 text-black font-semibold text-[15px] font-primary bg-[#F1F1F1] drop-shadow-lg">
+    <div className="md:p-4 lg:p-4 xl2:p-6 text-black font-semibold text-[15px] font-primary bg-[#F1F1F1] drop-shadow-lg">
       <div className="flex justify-between items-center mx-4">
         <div className="flex items-center justify-between w-screen md:w-auto">
           <h1 className="w-auto text-xl font-bold text-[#00df9a] cursor-pointer">
@@ -27,7 +28,7 @@ const Navbar = () => {
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
         </div>
-        <ul className="items-center hidden md:flex md:gap-[3rem]">
+        <ul className="items-center hidden md:flex md:gap-[4rem] lg:gap-[5rem] xl2:gap-[7rem]">
           <li className="m-3 cursor-pointer">Home</li>
           <li className="m-3 cursor-pointer">Shop</li>
           <li className="m-3 cursor-pointer">About Us</li>
@@ -43,7 +44,7 @@ const Navbar = () => {
           </li>
           <li className="cursor-pointer" onClick={toggleCart}>
             <FaShoppingCart className="opacity-70" size={23} />
-            <p className="bg-red-500 absolute p-[7px] text-white w-4 h-4 rounded-full text-xs flex items-center justify-center top-0 mt-[22px] ml-[13px]">0</p>
+            <p className="bg-red-500 absolute p-[7px] text-white w-4 h-4 rounded-full text-xs flex items-center justify-center top-0 lg:mt-[39px] ml-[13px] md:mt-[47px]">0</p>
           </li>
           <li className=" cursor-pointer w-6 h-6 bg-gray-500 rounded-full"></li>
         </ul>
