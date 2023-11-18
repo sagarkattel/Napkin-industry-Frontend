@@ -59,7 +59,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="">
+      <div className="md:hidden lg:hidden">
         <ul
           className={
             nav
@@ -72,6 +72,7 @@ const Navbar = () => {
           <li className="p-4 border-b border-gray-600 text-white">Shop</li>
           <li className="p-4 border-b border-gray-600 text-white">About Us</li>
           <li className="p-4 border-b border-gray-600 text-white">Contact</li>
+          <li className="p-4 border-b border-gray-600 text-white" onClick={toggleCart}><FaShoppingCart className="w-[25px] h-auto" /></li>
         </ul>
       </div>
     </div>
