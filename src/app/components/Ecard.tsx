@@ -4,6 +4,12 @@ import Image from "next/image";
 import products from './productdetails.json';
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { addProduct } from "@/redux/features/productSlice";
+import { CiStar } from "react-icons/ci";
+import { FaShoppingCart } from "react-icons/fa";
+import { FaPlus } from "react-icons/fa6";
+
+
+
 
 type productT={
   id:number,
@@ -25,94 +31,75 @@ const Ecard = () => {
     console.log(product)
   }
     return (
-    <div className="bg-white h-full flex md:flex-row flex-col md:flex-wrap">
+  
+
+      
+    <div className="bg-white flex md:flex-row flex-col justify-center  md:flex-wrap">
       {products.map((product)=>(
-      <div className="md:w-full  max-w-sm  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-7" key={product.id}>
-        <a href="#">
+        <div className=" xl2:w-[20rem] xl:w-[12rem] xl:h-[20rem] bg- border rounded-[25px] bg-[#D9D9D9] border-gray-200  shadow:border-gray-700 mx-[2rem] my-[1rem] mt-[3rem] mb-[3rem]" key={product.id}>
+
+        <div className=" border-white-200 xl:h-[10rem] rounded-[25px]  ">
+       
           <Image
             src={product.img_url}
             width={400}
             height={200}
-            alt="example image"
-          />
-        </a>
-        <div className="px-5 pb-5">
+            alt="example image" className=" h-full rounded-[25px]"
+            />
+     
+
+        </div>
+        <div>
+          
+        </div>
+
+        <div className="px-5 pb-5 pt-[1rem]">
           <a href="#">
-            <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-              {product.title}
+            <h5 className="text-xl font-semibold tracking-tight  text-black">
+             Popup Napkin
             </h5>
           </a>
-          <div className="flex items-center mt-2.5 mb-5">
-            <svg
-              className="w-4 h-4 text-yellow-300 mr-1"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 22 20"
-            >
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-            </svg>
-            <svg
-              className="w-4 h-4 text-yellow-300 mr-1"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 22 20"
-            >
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-            </svg>
-            <svg
-              className="w-4 h-4 text-yellow-300 mr-1"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 22 20"
-            >
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-            </svg>
-            <svg
-              className="w-4 h-4 text-yellow-300 mr-1"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 22 20"
-            >
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-            </svg>
-            <svg
-              className="w-4 h-4 text-gray-200 dark:text-gray-600"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 22 20"
-            >
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-            </svg>
-            <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
-              {product.rating}
-            </span>
+          <div className="flex items-center mt-[0.2rem] ">
+           
+ {[...Array(5)].map(star=>{
+   
+   return <CiStar className="" color="yellow"/>
+  })}
+
+          
+         
           </div>
-          <div className="flex items-center justify-between">
-            <span className="text-3xl font-bold text-gray-900 dark:text-white">
-              ${product.price}
+          <div className="flex items-center justify-between mt-4 -mb-[0.2rem] pb-4">
+            <span className="text-xl font-bold text-gray-900  dark:text-black">
+              Rs.{product.price}
             </span>
-            <button
+            {/* <button
             onClick={()=>handleClick(product)}
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
-              Add to cart
+            Add to cart
+          </button> */}
+
+            <button className="flex bg-[#D7E7ED] rounded-full px-2 py-2" onClick={()=>handleClick(product)}>
+
+            <FaShoppingCart className="text-sm " color="#808080"/>
+           
+
+
+
             </button>
           </div>
         </div>
       </div>
 
-      ))}
+))}
 
 
 
     </div>
+
+
   );
 };
 
 export default Ecard;
-
