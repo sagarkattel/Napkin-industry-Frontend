@@ -7,11 +7,15 @@ import { BsSearch } from "react-icons/bs";
 import { FaShoppingCart } from "react-icons/fa";
 
 import { AllContext } from "./Context";
+import { useAppSelector } from "@/redux/hooks";
+import { ProductProp } from "@/redux/features/productSlice";
 
 const Navbar = () => {
   const [nav, setNav] = useState<boolean>(false);
 
   const { toggleCart } = useContext(AllContext);
+
+  const products:ProductProp[] = useAppSelector((state:any) => state.product.products);
 
   const handleNav = () => {
     setNav(!nav);
@@ -47,8 +51,8 @@ const Navbar = () => {
 
           <li className="hidden md:flex lg:flex cursor-pointer" onClick={toggleCart}>
             <FaShoppingCart className="opacity-70" size={23} />
-            <p className="bg-red-500 absolute p-[7px] text-white w-4 h-4 rounded-full text-xs flex items-center justify-center top-0 mt-[35px] ml-[13px]">
-              0
+            <p className="bg-red-500 absolute p-[7px] text-white w-4 h-4 rounded-full text-xs flex items-center justify-center top-0 mt-[18px] ml-[13px]">
+              {products.length}
             </p>
           </li>
           <li className="hidden md:flex lg:flex cursor-pointer w-6 h-6 bg-gray-500 rounded-full"></li>
