@@ -1,4 +1,3 @@
-'use client'
 
 import products from '../../components/productdetails.json';
 
