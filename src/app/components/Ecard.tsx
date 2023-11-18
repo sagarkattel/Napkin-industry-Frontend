@@ -34,12 +34,12 @@ const Ecard = () => {
   
 
       
-      <div className="flex justify-center">
+      <div className="flex justify-center px-[1rem]">
 
-    <div className="bg-white grid  grid-cols-1 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 mr-[2rem] -pl[-0.5rem] ">
+    <div className="bg-white grid  grid-cols-1 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 mr-[2rem] -pl[-0.5rem]    mx-[2rem] mt-[1rem]">
 
       {products.map((product)=>(
-        <div className="  2xl:w-[20rem] xl:w-[18.5rem] lg:w-[15rem] md:w-[11rem] bg- border rounded-[25px] bg-[#D9D9D9] border-gray-200 mx-[1.5rem] shadow:border-gray-700 my-[1rem] mt-[3rem] mb-[3rem]" key={product.id}>
+        <div className=" 2xl:w-[19rem] xl:w-[18.5rem] lg:w-[15rem] md:w-[11rem]  border rounded-[25px] bg-[#D9D9D9] border-gray-200 mx-[1.5rem] shadow:border-gray-700  mb-[3rem]" key={product.id}>
 
         <div className="  2xl:h-[20rem] xl:h-[20rem] lg:h-[13rem]  md:h-[13rem] w-full rounded-[25px]  ">
        
