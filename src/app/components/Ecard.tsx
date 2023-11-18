@@ -34,11 +34,14 @@ const Ecard = () => {
   
 
       
-    <div className="bg-white flex md:flex-row flex-col justify-center  md:flex-wrap">
-      {products.map((product)=>(
-        <div className=" xl2:w-[20rem] xl:w-[12rem] xl:h-[20rem] bg- border rounded-[25px] bg-[#D9D9D9] border-gray-200  shadow:border-gray-700 mx-[2rem] my-[1rem] mt-[3rem] mb-[3rem]" key={product.id}>
+      <div className="flex justify-center">
 
-        <div className=" border-white-200 xl:h-[10rem] rounded-[25px]  ">
+    <div className="bg-white grid  grid-cols-1 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 mr-[2rem] -pl[-0.5rem] ">
+
+      {products.map((product)=>(
+        <div className="  2xl:w-[20rem] xl:w-[18.5rem] lg:w-[15rem] md:w-[11rem] bg- border rounded-[25px] bg-[#D9D9D9] border-gray-200 mx-[1.5rem] shadow:border-gray-700 my-[1rem] mt-[3rem] mb-[3rem]" key={product.id}>
+
+        <div className="  2xl:h-[20rem] xl:h-[20rem] lg:h-[13rem]  md:h-[13rem] w-full rounded-[25px]  ">
        
           <Image
             src={product.img_url}
@@ -94,6 +97,7 @@ const Ecard = () => {
 
     </div>
 
+</div>
 
   );
 };
