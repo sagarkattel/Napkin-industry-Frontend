@@ -1,9 +1,20 @@
-import React from 'react'
+// pages/products/[id].js
 
-const ProductDetail = () => {
+import { useRouter } from 'next/router';
+
+const ProductDetailPage = () => {
+  const router = useRouter();
+  const { id } = router.query;
+
+  // Fetch product details based on the id and render the page
+
   return (
-    <div>ProductDetail</div>
-  )
-}
+    <div>
+      <h1>Product Detail Page</h1>
+      <p>Product ID: {id}</p>
+      {/* Render other product details */}
+    </div>
+  );
+};
 
-export default ProductDetail
+export default ProductDetailPage;

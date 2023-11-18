@@ -9,6 +9,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { AllContext } from "./Context";
 import { useAppSelector } from "@/redux/hooks";
 import { ProductProp } from "@/redux/features/productSlice";
+import Link from "next/link";
 
 const Navbar = () => {
   const [nav, setNav] = useState<boolean>(false);
@@ -20,6 +21,14 @@ const Navbar = () => {
   const handleNav = () => {
     setNav(!nav);
   };
+
+  let Totalquantity=0;
+
+  const productElements = products.map((product) => (
+  <li key={product.id}>
+    {Totalquantity +=  product.quantity}
+  </li>
+));
 
   return (
     <div className="p-3 text-black font-semibold text-[15px] font-primary bg-[#F1F1F1] drop-shadow-lg lg:w-full">
@@ -34,10 +43,21 @@ const Navbar = () => {
         </div>
 
         <ul className="items-center hidden lg:gap-[5rem] text-sm lg:flex lg:mx-5 md:flex md:gap-[1rem]">
+          <Link href="/">
           <li className="m-3 cursor-pointer">Home</li>
+          </Link>
+
+          <Link href="/shop">
           <li className="m-3 cursor-pointer">Shop</li>
+          </Link>
+
+          <Link href="/aboutus">
           <li className="m-3 cursor-pointer">About Us</li>
+          </Link>
+
+          <Link href="/contactus">
           <li className="m-3 cursor-pointer">Contact</li>
+          </Link>
           {/* <li className='p-4' onClick={toggleCart}><FaShoppingCart size={25}/></li> */}
         </ul>
 
@@ -52,7 +72,7 @@ const Navbar = () => {
           <li className="hidden md:flex lg:flex cursor-pointer" onClick={toggleCart}>
             <FaShoppingCart className="opacity-70" size={23} />
             <p className="bg-red-500 absolute p-[7px] text-white w-4 h-4 rounded-full text-xs flex items-center justify-center top-0 mt-[18px] ml-[13px]">
-              {products.length}
+              {Totalquantity}
             </p>
           </li>
           <li className="hidden md:flex lg:flex cursor-pointer w-6 h-6 bg-gray-500 rounded-full"></li>
