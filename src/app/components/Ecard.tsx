@@ -61,11 +61,7 @@ const Ecard = () => {
           </a>
           <div className="flex items-center mt-[0.2rem] ">
            
- {[...Array(5)].map(star=>{
-   
-   return <CiStar className="" color="yellow"/>
-  })}
-
+ 
           
          
           </div>
