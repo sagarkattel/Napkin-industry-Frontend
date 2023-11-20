@@ -6,7 +6,7 @@ import { Carousel, CarouselProps } from "@material-tailwind/react";
 
 
 
-const banner:React.FC = () => {
+const Banner:React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const length:number = 3; // Update this with the actual number of images
 
@@ -65,4 +65,4 @@ const banner:React.FC = () => {
   );
 };
 
-export default banner;
+export default Banner;
