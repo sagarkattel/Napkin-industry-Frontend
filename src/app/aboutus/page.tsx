@@ -9,7 +9,7 @@ const Aboutus = () => {
     <div>
         <Navbar />
   
-  <Ecard />
+ 
 
   <Cart />
 
