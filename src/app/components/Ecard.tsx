@@ -45,31 +45,32 @@ const Ecard = () => {
             </div>
 
             <div className="p-4 flex flex-row items-center justify-center ">
-              <div className="h-[80px] flex flex-col gap-1">
-                <Link href={`/productdetail/${product.id}`} key={product.id}>
-                  <h5 className="text-[17px] font-semibold tracking-tight text-black hover:underline">
+              <Link href={`/productdetail/${product.id}`} key={product.id}>
+                <div className="h-[80px] flex flex-col gap-1">
+                  <h5 className="text-[17px] font-semibold tracking-tight text-black">
                     {product.title}
                   </h5>
-                </Link>
-                <div className="flex flex-row gap-[2px]">
-                  <span>
-                    <FaStar className="w-[18px] h-auto text-yellow-400" />
-                  </span>
-                  <span>
-                    <FaStar className="w-[18px] h-auto text-yellow-400" />
-                  </span>
-                  <span>
-                    <FaStar className="w-[18px] h-auto text-yellow-400" />
-                  </span>
-                  <span>
-                    <FaStar className="w-[18px] h-auto text-yellow-400" />
+
+                  <div className="flex flex-row gap-[2px]">
+                    <span>
+                      <FaStar className="w-[18px] h-auto text-yellow-400" />
+                    </span>
+                    <span>
+                      <FaStar className="w-[18px] h-auto text-yellow-400" />
+                    </span>
+                    <span>
+                      <FaStar className="w-[18px] h-auto text-yellow-400" />
+                    </span>
+                    <span>
+                      <FaStar className="w-[18px] h-auto text-yellow-400" />
+                    </span>
+                  </div>
+
+                  <span className="text-[15px] font-medium text-gray-900  dark:text-black">
+                    Rs.{product.price}
                   </span>
                 </div>
-
-                <span className="text-[15px] font-medium text-gray-900  dark:text-black">
-                  Rs.{product.price}
-                </span>
-              </div>
+              </Link>
 
               <div className="ml-auto flex items-center">
                 <button
