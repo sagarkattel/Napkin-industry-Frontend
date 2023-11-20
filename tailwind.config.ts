@@ -8,14 +8,16 @@ const config: Config = {
   ],
   theme: {
     fontFamily:{
-      primary:"Inter"
+      primary:"Inter",
+      heading:"Italiana",
+      secondHeading: "Josefin Slab"
     },
-    // screens: {
-    //   sm: '640px',
-    //   md: '760px',
-    //   lg: '1024px',
-    //   xl: '1230px',
-    // },
+    screens: {
+      sm: '640px',
+      md: '760px',
+      lg: '1024px',
+      xl: '1230px',
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
