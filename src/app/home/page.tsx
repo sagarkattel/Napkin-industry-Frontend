@@ -7,7 +7,7 @@ import Shipping from './shipping'
 import Footer from '../components/Footer'
 import Ecard from '../components/Ecard'
 import Cart from '../components/Cart'
-import Banner from './banner'
+// import Banner from './banner'
 
 
 const Home = () => {
@@ -15,7 +15,7 @@ const Home = () => {
     <div>
       <Navbar />
 
-      <Banner />
+      {/* <Banner /> */}
       <Shipping />   
 
       <div className='mx-[5rem] text-xl font-medium uppercase'>Our Best Sellling</div>
