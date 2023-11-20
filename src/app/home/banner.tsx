@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Heading from "../../../public/image/Heading.png"
-import { Carousel } from "@material-tailwind/react";
+// import { Carousel } from "@material-tailwind/react";
 
 
 
@@ -33,15 +33,12 @@ const Banner = () => {
           <button className="mt-5 bg-white p-1 px-3 lg:px-5 lg:p-2 md:px-5 md:p-2 text-[13px] rounded-[20px] font-bold font-secondHeading">Buy Now</button>
           <p className="uppercase mt-[2rem] text-[10px] pb-6 lg:pb-2 md:pb-2 text-center font-primary font-medium">First Napkin paper industry of Nepal</p>
         </div>
+        <Image src={Heading} alt="image" className="w-[13rem] md:w-[16rem] lg:w-[16rem] h-auto -mt-[2rem]" />
        
-        <div>
+        {/* <div>
         <Carousel
             className="rounded-xl"
-            autoplay={true} // Enable autoplay
-            // autoplayInterval={5000} // Set the interval time for autoplay (in milliseconds)
-            // activeIndex={activeIndex}
-            // setActiveIndex={setActiveIndex}
-            // length={length}
+            autoplay={true} 
             navigation={({ setActiveIndex, activeIndex, length }) => (
               <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
                 {new Array(length).fill("").map((_, i) => (
@@ -56,10 +53,9 @@ const Banner = () => {
               </div>
             )}
           >
-            <Image src={Heading} alt="image" className="w-[13rem] md:w-[16rem] lg:w-[16rem] h-auto -mt-[2rem]" />
-            {/* Other images */}
+            
           </Carousel>
-        </div>
+        </div> */}
       </div>
     </div>
   );
