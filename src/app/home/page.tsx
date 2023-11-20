@@ -7,7 +7,8 @@ import Shipping from './shipping'
 import Footer from '../components/Footer'
 import Ecard from '../components/Ecard'
 import Cart from '../components/Cart'
-import Banner from './Banner'
+import Banner from "./banner"
+
 
 
 const Home = () => {
