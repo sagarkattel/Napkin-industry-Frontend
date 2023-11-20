@@ -29,7 +29,7 @@ const Signin = () => {
       await updateProfile(user.user, {
         displayName: registerUsername,
       });
-      console.log(user.user);
+      // console.log(user.user);
       localStorage.setItem("name", user?.user?.displayName ?? "");
       router.push("/");
     } catch (error) {

@@ -1,6 +1,19 @@
-import React from "react";
+'use client'
+
+import React, { useEffect, useState } from "react";
 
 const Footer = () => {
+  const [name, setName] = useState("");
+
+  
+
+  useEffect(() => {
+    const storedName = localStorage.getItem("name");
+    if (storedName) {
+      setName(storedName);
+    }
+  }, []); 
+
   return (
     <footer className="bg-white  shadow dark:bg-gray-900 flex flex-col  m-auto">
 <hr className="my-6 border-gray-700 sm:mx-auto dark:border-gray-700 lg:my-8" />      
@@ -10,6 +23,7 @@ const Footer = () => {
           <span className="text-3xl pb-3 text-[#00df9a]">LOGO</span>
           <span className="text-slate-500">napkinpaper.com.np</span>
           <span className="text-slate-500">links</span>
+          <span>{name}</span>
         </div>
         <div className="flex flex-col md:gap-3 ">
           <span className="font-bold pb-3">ABOUT US</span>
