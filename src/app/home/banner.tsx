@@ -1,27 +1,25 @@
 "use client"
-import React,{useState, useEffect} from "react";
+import React,{useState} from "react";
 import Image from "next/image";
 import Heading from "../../../public/image/Heading.png"
-import { Carousel, CarouselProps } from "@material-tailwind/react";
-
-
+import { Carousel } from "@material-tailwind/react";
 
 const Banner = () => {
-  const [activeIndex, setActiveIndex] = useState<number>(0);
-  const length:number = 3; // Update this with the actual number of images
+//   const [activeIndex, setActiveIndex] = useState<number>(0);
+//   const length:number = 3; // Update this with the actual number of images
 
   // Function to handle changing the active index for autoplay
-  const handleAutoPlay = () => {
-    const interval = setInterval(() => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % length);
-    }, 5000); // Change the interval time (in milliseconds) as needed
+//   const handleAutoPlay = () => {
+//     const interval = setInterval(() => {
+//       setActiveIndex((prevIndex) => (prevIndex + 1) % length);
+//     }, 5000);
 
-    return () => clearInterval(interval);
-  };
+//     return () => clearInterval(interval);
+//   };
 
-  useEffect(() => {
-    handleAutoPlay();
-  }, []); // Run only once when the component mounts
+//   useEffect(() => {
+//     handleAutoPlay();
+//   }, []); 
    
   return (
     <div className="mb-4 bg-[#75C7E4] bg-opacity-40 w-full h-auto">
@@ -66,3 +64,4 @@ const Banner = () => {
 };
 
 export default Banner;
+
