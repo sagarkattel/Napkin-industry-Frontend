@@ -1,5 +1,8 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import Banner from './banner'
+import Shipping from './shipping'
+// import Title from './title'
 
 import Footer from '../components/Footer'
 import Ecard from '../components/Ecard'
@@ -10,7 +13,17 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-  
+
+      <Banner /> 
+      <Shipping />   
+
+      <div className='mx-[5rem] text-xl font-medium uppercase'>Our Best Sellling</div>
+      <Ecard />
+
+      <div className='mx-[5rem] mt-[2rem] text-xl font-medium uppercase'>Feature Products</div>
+      <Ecard />
+
+      <div className='mx-[5rem] mt-[2rem] text-xl font-medium uppercase'>Product of the week</div>
       <Ecard />
 
       <Cart />
