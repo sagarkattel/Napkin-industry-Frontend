@@ -118,9 +118,9 @@ const Navbar = () => {
               </p>
             </div>
           ) : (
-            <div className="p-7">
+            <div className="flex justify-center ">
               <button
-                className="cursor-pointer bg-red-400 p-3 px-7 rounded-sm"
+                className="cursor-pointer bg-[#00df9a] p-3 px-7 rounded-sm"
                 onClick={() => router.push("/login")}
               >
                 Login

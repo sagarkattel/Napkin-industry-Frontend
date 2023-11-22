@@ -8,14 +8,17 @@ import { FaStar } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa6";
 import Link from "next/link";
+import { Product } from "../productdetail/[id]/page";
 
-type productT = {
+export type productT = {
   id: number;
   title: string;
   img_url: string;
   price: number;
   rating: number;
 };
+
+
 
 const Ecard = () => {
   const dispatch = useAppDispatch();

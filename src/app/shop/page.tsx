@@ -16,7 +16,7 @@ const Shop = () => {
       <Qualitymsg />
 
       <SortBar/>
-      <Ecard />
+      {/* <Ecard /> */}
 
       <Napkinmsg />
       <Ecard />

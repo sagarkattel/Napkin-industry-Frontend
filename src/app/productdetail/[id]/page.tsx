@@ -10,6 +10,7 @@ export interface Product {
   id: number;
   title: string;
   img_url: string;
+  category:string;
   price: number;
   rating: number;
 }

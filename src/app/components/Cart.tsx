@@ -111,7 +111,7 @@ const Cart = () => {
                                     <button
                                     onClick={(event) => dispatch(removeProduct(product.id))}
                                     //   type="button"
-                                      className="font-medium text-indigo-600 hover:text-indigo-500"
+                                      className="font-medium text-[#00df9a] hover:text-[#71bfa6]"
                                     >
                                       Remove
                                     </button>
@@ -136,7 +136,7 @@ const Cart = () => {
                     <div className="mt-6">
                       <a
                         href="#"
-                        className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                        className="flex items-center justify-center rounded-md border border-transparent bg-[#00df9a] px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-[#63ebc0]"
                       >
                         Checkout
                       </a>
@@ -147,7 +147,7 @@ const Cart = () => {
                         <button
                         onClick={toggleCart}
                         //   type="button"
-                          className="font-medium text-indigo-600 hover:text-indigo-500"
+                          className="font-medium text-[#00df9a] hover:text-[#6ad1b1]"
                         >
                           Continue Shopping
                           <span aria-hidden="true"> &rarr;</span>
