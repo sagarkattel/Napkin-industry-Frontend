@@ -6,8 +6,8 @@ import { RiSecurePaymentLine } from "react-icons/ri";
 
 const shipping = () => {
   return (
-    <div className="py-[2rem] flex flex-col lg:flex-row md:flex-row items-center justify-between gap-6 mx-[5rem] font-primary">
-      <div className="w-[26rem] p-[3rem] h-[15rem] bg-[#cfcece] flex flex-col items-center justify-center rounded-[25px] gap-2">
+    <div className="py-[2rem] flex flex-col lg:flex-row md:flex-row items-center justify-center lg:justify-between gap-4 lg:gap-6 lg:mx-[5rem] md:mx-[5rem] font-primary">
+      <div className="lg:w-[26rem] w-[75%] md:w-[24rem] p-[3rem] h-[15rem] bg-[#cfcece] flex flex-col items-center justify-center rounded-[25px] gap-2">
         <span className="bg-[#D7E7ED] p-2 rounded-full">
           <LiaShippingFastSolid className="w-8 h-auto opacity-75" />
         </span>
@@ -15,13 +15,13 @@ const shipping = () => {
       </div>
 
       <div className="flex flex-col gap-4 items-center justify-center">
-        <div className="w-[23rem] h-[7rem] bg-[#cfcece] flex items-center justify-center rounded-[25px] gap-4">
+        <div className="lg:w-[23rem] w-[17.5rem] h-[6rem] lg:h-[7rem] bg-[#cfcece] flex items-center justify-center rounded-[25px] gap-4">
           <span className="bg-[#D7E7ED] p-2 rounded-full">
             <AiFillDollarCircle className="w-8 h-auto opacity-75" />
           </span>
           <p className="font-semibold text-[16px]">Money Back Guarantee</p>
         </div>
-        <div className="w-[23rem] h-[7rem] bg-[#cfcece] flex items-center justify-center rounded-[25px] gap-4">
+        <div className="lg:w-[23rem] w-[17.5rem] h-[6rem] lg:h-[7rem] bg-[#cfcece] flex items-center justify-center rounded-[25px] gap-4">
           <span className="bg-[#D7E7ED] p-2 rounded-full">
             <MdVerified className="w-8 h-auto opacity-75" />
           </span>
@@ -29,7 +29,7 @@ const shipping = () => {
         </div>
       </div>
 
-      <div className="w-[26rem] p-[3rem] h-[15rem] bg-[#cfcece] flex flex-col items-center justify-center rounded-[25px] gap-2">
+      <div className="lg:w-[26rem] w-[75%] p-[3rem] h-[15rem] bg-[#cfcece] flex flex-col items-center justify-center rounded-[25px] gap-2">
         <span className="bg-[#D7E7ED] p-2 rounded-full">
           <RiSecurePaymentLine className="w-8 h-auto opacity-75" />
         </span>
